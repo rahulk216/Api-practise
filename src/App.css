@@ -1,0 +1,87 @@
+.form-container {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	margin: auto;
+	padding: 2rem;
+	border: 2px solid black;
+}
+.form-container > * {
+	padding: 0.5rem;
+	border-radius: 5px;
+}
+
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+	align-items: center;
+	margin: auto;
+}
+
+.button {
+	display: flex;
+	background-color: #4caf50; /* Green */
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	width: 20%;
+	margin-top: 10px;
+}
+.master-container {
+	margin-top: 10px;
+}
+
+/*user*/
+.grid-container {
+	display: grid;
+	width: 70%;
+	margin: auto;
+	grid-template-columns: repeat(3, 1fr);
+}
+.grid-item {
+	padding: 1rem;
+	margin: 0.5rem;
+	height: 5rem;
+	grid-column: span 1;
+	display: flex;
+	justify-content: space-between;
+	box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+		rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+.user-name {
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	align-items: center;
+}
+.user-name div {
+	padding: 1.2rem;
+}
+.user-logo {
+	padding: 1rem;
+	border-radius: 50%;
+	color: white;
+}
+button {
+	border: none;
+}
+.pen-icon {
+	background-color: #fff;
+}
+.trash-icon {
+	background-color: #fff;
+	color: red;
+}
+@media screen and (max-width: 600px) {
+	.grid-container {
+		width: 90%;
+	}
+	.grid-item {
+		grid-column: span 4;
+	}
+}
